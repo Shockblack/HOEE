@@ -1,0 +1,41 @@
+temperature: [130, 'K'] # Thatte et al. 2016; Operates at -30 C, with IFS in cryostat at ~130 K
+
+VIS:
+  DC: [0.00056, 'electrons/s/pix'] # Thatte et al. 2016; 2 e/h/pix --> e/s/pix
+  RN: [2, 'electrons/pix'] # Thatte et al. 2016
+  QE: ./H4RG/H4RG_QE_VIS.csv # Zandian et al. 2016; TODO: Need to convert from nm --> um and out of % for QE
+NIR:
+  DC: [0.0053, 'electrons/s/pix'] # Thatte et al. 2016
+  RN: [2.8, 'electrons/pix'] # Thatte et al. 2016
+  QE: ./H4RG/H4RG_QE_NIR.csv # Zandian et al. 2016; TODO: Need to convert from nm --> um and out of % for QE
+Filters: # Thatte et al. 2016; Table 1
+  VR:
+    R: [3000, 'unitless']
+    wavelengths: [[0.5, 0.8], 'um'] # min is 0.5 um, goal is 0.43 um
+  IzJ:
+    R: [3000, 'unitless']
+    wavelengths: [[0.83, 1.35], 'um']
+  HK:
+    R: [3000, 'unitless']
+    wavelengths: [[1.45, 2.4], 'um'] # max is 2.4 um, goal is 2.45 um
+  Iz:
+    R: [7000, 'unitless']
+    wavelengths: [[0.83, 1.05], 'um']
+  J:
+    R: [7000, 'unitless']
+    wavelengths: [[1.05, 1.32], 'um']
+  H:
+    R: [7000, 'unitless']
+    wavelengths: [[1.45, 1.8], 'um']
+  K:
+    R: [7000, 'unitless']
+    wavelengths: [[1.97, 2.4], 'um']
+  Jhigh: # High Res, to be confirmed (as of Thatte et al. 2016, could be done)
+    R: [20000, 'unitless']
+    wavelengths: [[1.19, 1.3], 'um']
+  Hhigh: # High Res, to be confirmed (as of Thatte et al. 2016, could be done)
+    R: [20000, 'unitless']
+    wavelengths: [[1.54, 1.67], 'um']
+  Khigh: # High Res, to be confirmed (as of Thatte et al. 2016, could be done)
+    R: [20000, 'unitless']
+    wavelengths: [[2.10, 2.28], 'um']

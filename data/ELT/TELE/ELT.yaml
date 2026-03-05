@@ -1,0 +1,18 @@
+# ECP = E-ELT Construction Proposal
+PM:
+  circumscribing_diameter: [39.14634, 'm']
+  inscribing_diameter: [9.4136, 'm']
+  collecting_area: [1089.7598, 'm^2'] # computed
+  f_ratio: [0.88, 'unitless'] # ECP
+  segmentation: [hexagonal, 'unitless'] # ECP
+  segmentation_parameters:
+    segment_size: [1.45, 'meters'] # ECP
+    number_segments: [798, 'unitless'] # ECP
+    segment_gap: [0.004, 'm'] # ECP
+  number_sectors: [6, 'unitless']
+Instruments:
+  Starshade:
+    IWA: [58, 'mas'] # Soliman et al. 2024
+    OWA: [NAN, 'mas'] # Set by DM, unknown to Aiden right now
+  HARMONI:
+    path: ../HARMONI/HARMONI.yaml
