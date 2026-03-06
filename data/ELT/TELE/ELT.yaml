@@ -16,3 +16,4 @@ Instruments:
     OWA: [NAN, 'mas'] # Set by DM, unknown to Aiden right now
   HARMONI:
     path: ../HARMONI/HARMONI.yaml
+reflectivity: elt_M1_M6_reflectivities.csv # From IRDB
