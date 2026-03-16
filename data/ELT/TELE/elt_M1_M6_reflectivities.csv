@@ -27,7 +27,7 @@
 #  - reflection includes dust contamination as in ESO-253082_4, sect 4.11
 #  - from AstarVienne IRDB
 #
-# wavelength,reflection,emissivity
+# wavelength (um),reflection,emissivity
 0.3000,0.0000,1.1730
 0.3050,0.0000,1.1730
 0.3100,0.0000,1.1730

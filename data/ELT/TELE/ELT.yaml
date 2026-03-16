@@ -1,8 +1,7 @@
 # ECP = E-ELT Construction Proposal
 PM:
   circumscribing_diameter: [39.14634, 'm']
-  inscribing_diameter: [9.4136, 'm']
-  collecting_area: [1089.7598, 'm^2'] # computed
+  collecting_area: [1089.7598, 'm^2'] # computed from the hexagonal segments
   f_ratio: [0.88, 'unitless'] # ECP
   segmentation: [hexagonal, 'unitless'] # ECP
   segmentation_parameters:
@@ -12,8 +11,8 @@ PM:
   number_sectors: [6, 'unitless']
 Instruments:
   Starshade:
-    IWA: [54, 'mas'] # 54 mas from Jamila; 58 mas geometric Soliman et al. 2024
-    OWA: [NAN, 'mas'] # Set by DM, unknown to Aiden right now
+    IWA: [54, 'mas'] # 54 mas from Jamila --> ~ 15 lam/D
+    OWA: [254, 'mas'] # Set by DM, 128x128 --> 64 lam/D
     num_petals: [48, 'unitless']
     contrast: ../starshade/hoee_contrast_mas.csv # Soliman et al. 2024
     core_throughput: ../starshade/core_throughput_48p_HOEE.csv # core thru at 700 nm for 48 petals (since Soliman+2024 assumes 48)

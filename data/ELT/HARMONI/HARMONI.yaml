@@ -3,11 +3,11 @@ temperature: [130, 'K'] # Thatte et al. 2016; Operates at -30 C, with IFS in cry
 VIS:
   DC: [0.00056, 'electrons/s/pix'] # Thatte et al. 2016; 2 e/h/pix --> e/s/pix
   RN: [2, 'electrons/pix'] # Thatte et al. 2016
-  QE: ./H4RG/H4RG_QE_VIS.csv # Zandian et al. 2016; TODO: Need to convert from nm --> um and out of % for QE
+  QE: ./H4RG/H4RG_QE_MICADO_irdb.csv # IRDB
 NIR:
   DC: [0.0053, 'electrons/s/pix'] # Thatte et al. 2016
   RN: [2.8, 'electrons/pix'] # Thatte et al. 2016
-  QE: ./H4RG/H4RG_QE_NIR.csv # Zandian et al. 2016; TODO: Need to convert from nm --> um and out of % for QE
+  QE: ./H4RG/H4RG_QE_MICADO_irdb.csv # IRDB
 Filters: # Thatte et al. 2016; Table 1
   VR:
     R: [3000, 'unitless']
